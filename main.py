@@ -1,4 +1,10 @@
-games = []
+import json
+
+try:
+	with open("games.json", "r") as file:
+		games = json.load(file)
+except:
+	games = []
 
 while True:
 	print("\n=== VIDEOGAMES TRACKER ===")
@@ -11,6 +17,8 @@ while True:
 	if option == "1":
 		game = input("Nombre del juego: ")
 		games.append(game)
+		with open("games.json", "w") as file:
+			json.dump(games, file, indent=4)
 		print("Juego agregado")
 	
 	elif option == "2":
