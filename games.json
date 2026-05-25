@@ -1,3 +1,7 @@
 [
-    "One Piece - Unlimited Adventure"
+    {
+        "nombre": "One Piece - Unlimited Adventure",
+        "plataforma": "Wii",
+        "estado": "Finalizado"
+    }
 ]
