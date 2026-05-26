@@ -38,6 +38,7 @@ while True:
 		print("juego agregado")
 
 	elif option == "2":
+		
 		print("\nTus juegos:")
 		for game in games:
 			print(f"""
